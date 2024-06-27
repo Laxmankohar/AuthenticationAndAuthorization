@@ -1,4 +1,4 @@
-import User from "../Models/userModel";
+import User from "../Models/userModel.js";
 import bcrypt from "bcrypt";
 
 const signUp = async (req, res) => {
@@ -29,7 +29,7 @@ const signUp = async (req, res) => {
     const salt = await bcrypt.genSalt(6);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    // creatting new user
+    // creating new user
 
     const user = new user({
       name,
