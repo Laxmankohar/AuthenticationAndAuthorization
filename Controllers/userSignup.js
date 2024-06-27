@@ -48,4 +48,4 @@ const signUp = async (req, res) => {
   }
 };
 
-export  {signUp};
+export { signUp };
